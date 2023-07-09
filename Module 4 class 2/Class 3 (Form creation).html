@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="Class 5 Navigation.css">
     <style>
-        label{
-        margin-bottom: 10px;
+        label {
+            margin-bottom: 10px;
             display: block;
             border-collapse: collapse;
         }
-        fieldset{
+
+        fieldset {
             margin-top: 10px;
             margin-bottom: 10px;
         }
     </style>
 </head>
+
 <body>
     <header>
-
+        <!-- Shortcut li*number>a +tab example: li*4>a-->
+        <nav>
+            <ul>
+                <li><a href="class 2.css">C.css</a></li>
+                <li><a href="Table, Naviagte (Class 4).html">TNav</a></li>
+                <li><a href="First website with header footer and main.html">EOHF</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -26,40 +37,40 @@
         <form>
             <label for="Name">
                 Name: <input type="text" name="your name" id="name" placeholder="Your Name">
-             </label>
-             <label for="email">
+            </label>
+            <label for="email">
                 Email: <input type="email" name="email" id="email" placeholder="Your Email">
-             </label>
-             <label for="Phone">
+            </label>
+            <label for="Phone">
                 Phone Number: <input type="number" name="" id="Phone number" placeholder="Your Phone number">
-             </label>
+            </label>
 
-             <h2>Choose from them</h2>
+            <h2>Choose from them</h2>
 
-             <fieldset>
+            <fieldset>
                 <legend>
-                    Pick One place 
+                    Pick One place
                 </legend>
                 <label for="Sylhet"><input type="radio" name="place" id="Sylhet">Sylhet</label>
                 <label for="Cox's Bazar"><input type="radio" name="place" id="Bazar">Cox's Bazar</label>
                 <label for="Sajek"><input type="radio" name="place" id="Sajek">Sajek</label>
-             </fieldset>
+            </fieldset>
 
-             <fieldset>
+            <fieldset>
                 <legend>
                     Choose a Pack
                 </legend>
                 <label for="3 Days"><input type="checkbox" name="Pack" id="3 Days ">3 Days 2 Night</label>
                 <label for="4 Days"><input type="checkbox" name="Pack" id="4 Days ">4 Days 3 Night</label>
                 <label for="5 Days"><input type="checkbox" name="Pack" id="5 Days ">5 Days 4 Night</label>
-             </fieldset>
-             <fieldset>
+            </fieldset>
+            <fieldset>
                 <legend>Special Comment</legend>
                 <textarea name="" id="" cols="30" rows="2"></textarea>
-             </fieldset>
+            </fieldset>
 
-             <input type="reset" value="Reset">
-             <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
         </form>
     </main>
 
@@ -68,4 +79,5 @@
     </footer>
 
 </body>
+
 </html>

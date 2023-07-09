@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table creation</title>
+    <link rel="stylesheet" href="Class 5 Navigation.css">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid blue;
+            padding: 4px 6px;
+        }
+
+        tfoot,
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Shortcut li*number>a +tab example: li*4>a-->
+        <nav>
+            <ul>
+                <li><a href="class 2.css">C.css</a></li>
+                <li><a href="Class 3 (Form creation).html">Class-3</a></li>
+                <li><a href="First website with header footer and main.html">EOHF</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>First Table</h1>
+        <table>
+            <thead>
+                <caption> Learn About their Salary</caption>
+                <tr>
+                    <!-- shortcut th*number example: th*4 + tab-->
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Microsoft</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sleve Jobs</td>
+                    <td>Apple</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Google</td>
+                    <td>$1100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Zukarbarg</td>
+                    <td>Facebook</td>
+                    <td>$1300</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">4 Empleyee Salary Sheet</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+
+</html>
