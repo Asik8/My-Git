@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table creation</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td,th {
+            border: 1px solid blue;
+            padding: 4px 6px;          
+        }
+        tfoot,h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>First Table</h1>
+    <table>
+        <thead>
+           <caption> Learn About their Salary</caption>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Microsoft</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sleve Jobs</td>
+                <td>Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Google</td>
+                <td>$1100</td>
+            </tr> 
+            <tr>
+                <td>4</td>
+                <td>Mark Zukarbarg</td>
+                <td>Facebook</td>
+                <td>$1300</td>
+            </tr>       
+        </tbody>
+        <tfoot>
+            <tr><td colspan="4">4 Empleyee Salary Sheet</td></tr>
+        </tfoot>
+    </table>
+</body>
+</html>
