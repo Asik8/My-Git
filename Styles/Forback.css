@@ -1,3 +1,6 @@
-.upperid{
+.upperline{
     border-top: 10px solid;
+}
+.bottomline{
+    border-bottom: 10px dotted;
 }

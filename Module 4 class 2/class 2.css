@@ -1,0 +1,22 @@
+/* header{
+nav-index: auto;
+
+} */
+nav > ul > li {
+    text-align: right;
+    margin-right: 10px;
+    display: inline;
+
+}
+
+nav li > a{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10 px;
+}
+figure{
+
+}
