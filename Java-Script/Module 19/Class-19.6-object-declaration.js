@@ -6,6 +6,6 @@ var semesters={
     fifthSemester: 'Still running but got some good teachers'
 }
 
-console.log(semesters.fifthSemester);
+console.log(semesters);
 semesters.fourthSemester='Lameya Maggi and Shahadat Motka was a very bad teacher';
 console.log(semesters.fourthSemester);
