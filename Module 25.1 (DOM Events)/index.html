@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajke DOM er Event</title>
+</head>
+
+<body>
+    <h1>Ajke Khela hobe Dom er Event e</h1>
+
+    <!-- Add onclick on a button -->
+    <button onclick="console.log('You clicked the first button')">Click Me</button>
+    <button onclick="console.log('You clicked the second button')">Skip Me</button>
+    <!-- Change background color using a button -->
+
+    <!-- System 1 -->
+    <button onclick="document.body.style.backgroundColor='yellow'"> Make Yellow</button>
+
+    <!-- System 2 "We'll use most of th cases" -->
+    <button onclick="makeRed()"> Make Red</button>
+
+    <!-- System 3 -->
+    <button id="makeBlue"> Make Blue</button>
+    <!-- or -->
+    <button id="makePurple"> Make Purple</button>
+
+    <!-- System 4 "We'll use most of th cases" -->
+    <button id="makeOrange"> Make Orange</button>
+    <!-- System 5 "We'll use most of th cases" -->
+    <button id="makeTomato"> Make Tomato</button>
+
+
+    <script src="js/events.js"></script>
+
+    <script>
+        function makeRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+    </script>
+
+    <script>
+        const blueBtn = document.getElementById('makeBlue');
+        blueBtn.onclick = makeBlue;
+
+        function makeBlue() {
+            document.body.style.backgroundColor = 'blue';
+        }
+
+    </script>
+
+    <script>
+        const purpleBtn = document.getElementById('makePurple');
+        purpleBtn.onclick = function makePurple() {
+            document.body.style.backgroundColor = 'purple';
+        }
+
+    </script>
+
+    <script>
+        const orangeBtn = document.getElementById('makeOrange');
+        orangeBtn.addEventListener('click', makePurple)
+        function makePurple() {
+            document.body.style.backgroundColor = 'Orange';
+        }
+
+    </script>
+
+    <script>
+        const tomatoBtn = document.getElementById('makeTomato');
+        tomatoBtn.addEventListener('click', makePurple)
+        function makePurple() {
+            document.body.style.backgroundColor = 'tomato';
+        }
+
+    </script>
+
+</body>
+
+</html>
