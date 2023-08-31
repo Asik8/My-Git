@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Summary for Dom</title>
+</head>
+
+<body>
+    <h1>Welcome to the event Summary</h1>
+    <p id="paragraph">Add default Text</p>
+    <input type="text" name="" id="input-text">
+    <button id="button-input">Update Now</button>
+    <br>
+
+    <h2 id="heading-two">Changeable Heading 2</h2>
+
+    <!-- Method-1 -->
+    <button onclick="handler()">Click here to change the event summary for the heading 2</button>
+
+    <!-- Method-2 -->
+    <button id="change-handle" >Change the heading to the next step</button>
+
+    <script>
+            // <!-- Method-1 -->
+        function handler() {
+            const secondHeading = document.getElementById("heading-two");
+            secondHeading.innerText = "Yes!! you successfully changed the Second Heading.";
+        }
+
+         // <!-- Method-2 -->
+        document.getElementById('change-handle').addEventListener('click',function(){
+            const headingTwo= document.getElementById('heading-two');
+            headingTwo.innerText='You managed to pass the second try';
+        })
+
+        // For the input text part
+        document.getElementById('button-input').addEventListener('click', function(){
+            const inputText= document.getElementById('input-text');
+            const Paragraph=document.getElementById('paragraph');
+
+            const inputValue= inputText.value;
+            Paragraph.innerText = inputValue;
+            inputText.value='';
+        })
+
+    </script>
+
+</body>
+
+</html>
