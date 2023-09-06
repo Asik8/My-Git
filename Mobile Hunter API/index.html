@@ -12,14 +12,20 @@
 
 </head>
 
-<body>
+<body class="bg-blue-50">
     <header>
         <h1 class="text-4xl">Mobile Hunter</h1>
     </header>
 
-    <main>
-        <section>
-            <div id="card-container" class="">
+    <main class="container mx-auto ">
+
+        <section class="bg-blue-400 mb-10 p-4">
+            <input type="text" id="input-text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
+            <button class="btn btn-accent" onclick="searchBtn()">search</button>
+        </section>
+
+        <section class="bg-blue-100 mb-10">
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
 
             </div>
         </section>
