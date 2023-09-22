@@ -1,0 +1,32 @@
+body{
+    /* background: url('../Images/13456.jpg'); */
+    background: url('https://i.ibb.co/JB1y0X5/4690.jpg'), linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));;
+    font-family: 'montserrat', sans-serif;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card{
+    width: 250px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 1px;
+    background: linear-gradient(rgba(65, 67, 65, 0.7), rgba(43, 48, 43, 0.7));
+}
+
+.photo{
+    margin-left: 87px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+.button{
+    background-color: green;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 90px;
+    margin-top: 13px;
+}
