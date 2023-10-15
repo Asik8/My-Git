@@ -1,12 +1,18 @@
 
 import './App.css'
-import Navbar from './Navbar'
+import SampleForm from './Module46/SampleForm'
+import UseStateOnForm from './UseStateOnForm'
+// import Navbar from './Navbar'
+// import PriceOptions from './PriceOptions/PriceOptions'
 
 function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar>
+      <PriceOptions></PriceOptions> */}
+      {/* <SampleForm></SampleForm> */}
+      <UseStateOnForm></UseStateOnForm>
     </>
   )
 }
